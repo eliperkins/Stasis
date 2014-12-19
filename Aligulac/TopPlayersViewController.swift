@@ -15,25 +15,10 @@ class TopPlayersViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        viewModel.players.values().on {
-            _ in
-            self.tableView.reloadData()
-        }
+
         
-        viewModel.loadPlayersAction
-            .execute(viewModel.client)
-            .on(
-                subscribed: {},
-                next: {
-                    _ in
-                    self.tableView.reloadData()
-                },
-                error: {
-                    error in
-                    print(error)
-                },
-                completed: {}, terminated: {}, disposed: {}
-            )
+        viewModel.loadPlayersAction.apply(viewModel.client).start()
+        
 
     }
 
