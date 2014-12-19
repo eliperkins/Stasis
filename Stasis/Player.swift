@@ -6,16 +6,16 @@
 //  Copyright (c) 2014 Eli Perkins. All rights reserved.
 //
 
-struct Player: Printable {
-    let name: String
-    let romanizedName: String?
-    let tag: String
-    let race: Race
-    let team: Team
-    let remoteID: Int
-    let country: String
+public struct Player: Printable {
+    public let name: String
+    public let romanizedName: String?
+    public let tag: String
+    public let race: Race
+    public let team: Team
+    public let remoteID: Int
+    public let country: String
 
-    static func transform(dict: [String : AnyObject]) -> Player {
+    public static func transform(dict: [String : AnyObject]) -> Player {
         let name = dict["name"] as String
         let romanized = dict["romanized_name"] as? String
         let tag = dict["tag"] as String
@@ -41,17 +41,17 @@ struct Player: Printable {
         )
     }
     
-    var description: String {
+    public var description: String {
         return "Player: [\(team.shortname)] \(tag) (\(name))"
     }
 }
 
-enum Race {
+public enum Race {
     case Terran
     case Zerg
     case Protoss
 
-    static func fromString(race: String) -> Race {
+    public static func fromString(race: String) -> Race {
         switch race.lowercaseString {
         case "t":
             return .Terran
@@ -65,16 +65,16 @@ enum Race {
     }
 }
 
-struct Team {
-    let name: String
-    let shortname: String
-    let remoteID: Int
+public struct Team {
+    public let name: String
+    public let shortname: String
+    public let remoteID: Int
     
-    static var TeamlessTeam: Team {
+    public static var TeamlessTeam: Team {
         return Team(name: "Teamless", shortname: "", remoteID: 0)
     }
     
-    static func transform(dict: Dictionary<String,AnyObject>) -> Team {
+    public static func transform(dict: Dictionary<String,AnyObject>) -> Team {
         let name = dict["name"] as String
         let shortname = dict["shortname"] as String
         let remoteID = dict["id"] as Int

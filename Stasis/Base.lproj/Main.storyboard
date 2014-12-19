@@ -57,6 +57,7 @@
                                         <constraint firstItem="u3x-Wb-NVs" firstAttribute="leading" secondItem="BiW-xc-vlB" secondAttribute="leading" id="zgb-pd-Zwp"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <inset key="separatorInset" minX="88" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <connections>
                                     <outlet property="flagImageView" destination="hEA-cM-acg" id="0Lh-6C-tXW"/>
                                     <outlet property="raceImageView" destination="iJN-JR-gqy" id="keJ-K8-31c"/>
