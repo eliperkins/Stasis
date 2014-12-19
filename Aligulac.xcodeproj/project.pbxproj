@@ -28,6 +28,7 @@
 		26D94B671A24AE7B00F2678C /* TopPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D94B651A24AE7B00F2678C /* TopPlayersViewController.swift */; };
 		26F23B9E1A43980200382D51 /* PlayerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F23B9D1A43980200382D51 /* PlayerListViewModel.swift */; };
 		26F23BA01A43980A00382D51 /* PlayerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F23B9F1A43980A00382D51 /* PlayerViewModel.swift */; };
+		26F23BA51A44971200382D51 /* PlayerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F23BA41A44971200382D51 /* PlayerListCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		26D94B651A24AE7B00F2678C /* TopPlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPlayersViewController.swift; sourceTree = "<group>"; };
 		26F23B9D1A43980200382D51 /* PlayerListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerListViewModel.swift; sourceTree = "<group>"; };
 		26F23B9F1A43980A00382D51 /* PlayerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerViewModel.swift; sourceTree = "<group>"; };
+		26F23BA41A44971200382D51 /* PlayerListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerListCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +139,7 @@
 			children = (
 				2642C65C1A2544F500ED1BDD /* Models */,
 				26F23BA11A43981700382D51 /* View Models */,
-				26D94B651A24AE7B00F2678C /* TopPlayersViewController.swift */,
+				26F23BA31A4496F800382D51 /* Views */,
 				267A743B1A23FEF100B0688E /* AppDelegate.swift */,
 				267A743D1A23FEF100B0688E /* ViewController.swift */,
 				263D49531A2D312A008D3AC9 /* ResultExtension.swift */,
@@ -188,6 +190,15 @@
 				26F23B9D1A43980200382D51 /* PlayerListViewModel.swift */,
 			);
 			name = "View Models";
+			sourceTree = "<group>";
+		};
+		26F23BA31A4496F800382D51 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26D94B651A24AE7B00F2678C /* TopPlayersViewController.swift */,
+				26F23BA41A44971200382D51 /* PlayerListCell.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,6 +310,7 @@
 				26D94B661A24AE7B00F2678C /* Player.swift in Sources */,
 				2642C65B1A2544E900ED1BDD /* AligulacAPI.swift in Sources */,
 				26F23B9E1A43980200382D51 /* PlayerListViewModel.swift in Sources */,
+				26F23BA51A44971200382D51 /* PlayerListCell.swift in Sources */,
 				267A743C1A23FEF100B0688E /* AppDelegate.swift in Sources */,
 				26D94B671A24AE7B00F2678C /* TopPlayersViewController.swift in Sources */,
 			);

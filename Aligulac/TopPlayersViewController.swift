@@ -15,11 +15,7 @@ class TopPlayersViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-
-        
         viewModel.loadPlayersAction.apply(viewModel.client).start()
-        
-
     }
 
     // MARK: - UITableViewDataSource
@@ -29,8 +25,8 @@ class TopPlayersViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = viewModel.players.value[indexPath.row].inGameName()
+        let cell = tableView.dequeueReusableCellWithIdentifier("PlayerListCell", forIndexPath: indexPath) as PlayerListCell
+        cell.viewModel = viewModel.players.value[indexPath.row]
         return cell
     }
     
