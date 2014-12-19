@@ -1,5 +1,7 @@
-github "ReactiveCocoa/ReactiveCocoa" == 3.0.2
-github "Quick/Quick" == 0.2.0
-github "Quick/Nimble"
+github "ReactiveCocoa/ReactiveCocoa" "swift-development"
+
 github "LlamaKit/LlamaKit"
 github "eliperkins/CMDQueryStringSerialization"
+
+github "Quick/Quick" == 0.2.0
+github "Quick/Nimble"

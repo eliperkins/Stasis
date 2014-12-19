@@ -10,38 +10,42 @@ import UIKit
 import ReactiveCocoa
 
 class TopPlayersViewController: UITableViewController {
-    var players = ObservableProperty<[Player]>([])
+    let viewModel = PlayerListViewModel()
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        AligulacAPI.fetchPlayers().start(next: {
-            players in
-            self.players.put(players)
-            return
-        })
-        
-        players.values().start(next: {
-            players in
+        viewModel.players.values().on {
+            _ in
             self.tableView.reloadData()
-        })
-    }
+        }
+        
+        viewModel.loadPlayersAction
+            .execute(viewModel.client)
+            .on(
+                subscribed: {},
+                next: {
+                    _ in
+                    self.tableView.reloadData()
+                },
+                error: {
+                    error in
+                    print(error)
+                },
+                completed: {}, terminated: {}, disposed: {}
+            )
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - UITableViewDataSource
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countElements(players.value)
+        return countElements(viewModel.players.value)
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = players.value[indexPath.row].tag
+        cell.textLabel?.text = viewModel.players.value[indexPath.row].inGameName()
         return cell
     }
     
