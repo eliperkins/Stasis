@@ -1,6 +1,6 @@
 //
 //  PlayerListCell.swift
-//  Aligulac
+//  Stasis
 //
 //  Created by Eli Perkins on 12/19/14.
 //  Copyright (c) 2014 eliperkins. All rights reserved.

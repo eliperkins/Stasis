@@ -1,6 +1,6 @@
 //
 //  Player.swift
-//  Aligulac
+//  Stasis
 //
 //  Created by Eli Perkins on 11/7/14.
 //  Copyright (c) 2014 Eli Perkins. All rights reserved.

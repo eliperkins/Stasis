@@ -1,6 +1,6 @@
 //
-//  AligulacTests.swift
-//  AligulacTests
+//  StasisTests.swift
+//  StasisTests
 //
 //  Created by Eli Perkins (Venmo) on 11/24/14.
 //  Copyright (c) 2014 eliperkins. All rights reserved.
@@ -9,7 +9,7 @@
 import UIKit
 import XCTest
 
-class AligulacTests: XCTestCase {
+class StasisTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

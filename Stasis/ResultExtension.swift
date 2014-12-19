@@ -1,6 +1,6 @@
 //
 //  ResultExtension.swift
-//  Aligulac
+//  Stasis
 //
 //  Created by Eli Perkins (Venmo) on 12/1/14.
 //  Copyright (c) 2014 eliperkins. All rights reserved.

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "267A74351A23FEF100B0688E"
-               BuildableName = "Aligulac.app"
-               BlueprintName = "Aligulac"
-               ReferencedContainer = "container:Aligulac.xcodeproj">
+               BuildableName = "Stasis.app"
+               BlueprintName = "Stasis"
+               ReferencedContainer = "container:Stasis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -29,9 +29,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "267A744A1A23FEF100B0688E"
-               BuildableName = "AligulacTests.xctest"
-               BlueprintName = "AligulacTests"
-               ReferencedContainer = "container:Aligulac.xcodeproj">
+               BuildableName = "StasisTests.xctest"
+               BlueprintName = "StasisTests"
+               ReferencedContainer = "container:Stasis.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "267A744A1A23FEF100B0688E"
-               BuildableName = "AligulacTests.xctest"
-               BlueprintName = "AligulacTests"
-               ReferencedContainer = "container:Aligulac.xcodeproj">
+               BuildableName = "StasisTests.xctest"
+               BlueprintName = "StasisTests"
+               ReferencedContainer = "container:Stasis.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -57,9 +57,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "267A74351A23FEF100B0688E"
-            BuildableName = "Aligulac.app"
-            BlueprintName = "Aligulac"
-            ReferencedContainer = "container:Aligulac.xcodeproj">
+            BuildableName = "Stasis.app"
+            BlueprintName = "Stasis"
+            ReferencedContainer = "container:Stasis.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +77,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "267A74351A23FEF100B0688E"
-            BuildableName = "Aligulac.app"
-            BlueprintName = "Aligulac"
-            ReferencedContainer = "container:Aligulac.xcodeproj">
+            BuildableName = "Stasis.app"
+            BlueprintName = "Stasis"
+            ReferencedContainer = "container:Stasis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +96,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "267A74351A23FEF100B0688E"
-            BuildableName = "Aligulac.app"
-            BlueprintName = "Aligulac"
-            ReferencedContainer = "container:Aligulac.xcodeproj">
+            BuildableName = "Stasis.app"
+            BlueprintName = "Stasis"
+            ReferencedContainer = "container:Stasis.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

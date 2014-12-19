@@ -19,7 +19,7 @@
 		267A74411A23FEF100B0688E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267A743F1A23FEF100B0688E /* Main.storyboard */; };
 		267A74431A23FEF100B0688E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267A74421A23FEF100B0688E /* Images.xcassets */; };
 		267A74461A23FEF100B0688E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267A74441A23FEF100B0688E /* LaunchScreen.xib */; };
-		267A74521A23FEF100B0688E /* AligulacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267A74511A23FEF100B0688E /* AligulacTests.swift */; };
+		267A74521A23FEF100B0688E /* StasisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267A74511A23FEF100B0688E /* StasisTests.swift */; };
 		26A894381A2E8CEB0063F68A /* CMDQueryStringKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A894361A2E8CEB0063F68A /* CMDQueryStringKit.framework */; };
 		26A894391A2E8CEB0063F68A /* CMDQueryStringKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26A894361A2E8CEB0063F68A /* CMDQueryStringKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		26A8943A1A2E8CEB0063F68A /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A894371A2E8CEB0063F68A /* ISO8601.framework */; };
@@ -37,7 +37,7 @@
 			containerPortal = 267A742E1A23FEF100B0688E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 267A74351A23FEF100B0688E;
-			remoteInfo = Aligulac;
+			remoteInfo = Stasis;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -66,16 +66,16 @@
 		264F23A61A24CF32005FFB37 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../Carthage.build/iOS/LlamaKit.framework; sourceTree = "<group>"; };
 		264F23A71A24CF32005FFB37 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage.build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		264F23A81A24CF32005FFB37 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage.build/iOS/Quick.framework; sourceTree = "<group>"; };
-		267A74361A23FEF100B0688E /* Aligulac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aligulac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		267A74361A23FEF100B0688E /* Stasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267A743A1A23FEF100B0688E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		267A743B1A23FEF100B0688E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		267A743D1A23FEF100B0688E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		267A74401A23FEF100B0688E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		267A74421A23FEF100B0688E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		267A74451A23FEF100B0688E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		267A744B1A23FEF100B0688E /* AligulacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AligulacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		267A744B1A23FEF100B0688E /* StasisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StasisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		267A74501A23FEF100B0688E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		267A74511A23FEF100B0688E /* AligulacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AligulacTests.swift; sourceTree = "<group>"; };
+		267A74511A23FEF100B0688E /* StasisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StasisTests.swift; sourceTree = "<group>"; };
 		26A894361A2E8CEB0063F68A /* CMDQueryStringKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CMDQueryStringKit.framework; path = ../Carthage.build/iOS/CMDQueryStringKit.framework; sourceTree = "<group>"; };
 		26A894371A2E8CEB0063F68A /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = ../Carthage.build/iOS/ISO8601.framework; sourceTree = "<group>"; };
 		26D94B641A24AE7B00F2678C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -119,8 +119,8 @@
 		267A742D1A23FEF100B0688E = {
 			isa = PBXGroup;
 			children = (
-				267A74381A23FEF100B0688E /* Aligulac */,
-				267A744E1A23FEF100B0688E /* AligulacTests */,
+				267A74381A23FEF100B0688E /* Stasis */,
+				267A744E1A23FEF100B0688E /* StasisTests */,
 				267A74371A23FEF100B0688E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -128,13 +128,13 @@
 		267A74371A23FEF100B0688E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				267A74361A23FEF100B0688E /* Aligulac.app */,
-				267A744B1A23FEF100B0688E /* AligulacTests.xctest */,
+				267A74361A23FEF100B0688E /* Stasis.app */,
+				267A744B1A23FEF100B0688E /* StasisTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		267A74381A23FEF100B0688E /* Aligulac */ = {
+		267A74381A23FEF100B0688E /* Stasis */ = {
 			isa = PBXGroup;
 			children = (
 				2642C65C1A2544F500ED1BDD /* Models */,
@@ -148,7 +148,8 @@
 				267A74421A23FEF100B0688E /* Images.xcassets */,
 				267A74391A23FEF100B0688E /* Supporting Files */,
 			);
-			path = Aligulac;
+			name = Stasis;
+			path = Stasis;
 			sourceTree = "<group>";
 		};
 		267A74391A23FEF100B0688E /* Supporting Files */ = {
@@ -166,13 +167,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		267A744E1A23FEF100B0688E /* AligulacTests */ = {
+		267A744E1A23FEF100B0688E /* StasisTests */ = {
 			isa = PBXGroup;
 			children = (
-				267A74511A23FEF100B0688E /* AligulacTests.swift */,
+				267A74511A23FEF100B0688E /* StasisTests.swift */,
 				267A744F1A23FEF100B0688E /* Supporting Files */,
 			);
-			path = AligulacTests;
+			name = StasisTests;
+			path = StasisTests;
 			sourceTree = "<group>";
 		};
 		267A744F1A23FEF100B0688E /* Supporting Files */ = {
@@ -204,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		267A74351A23FEF100B0688E /* Aligulac */ = {
+		267A74351A23FEF100B0688E /* Stasis */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 267A74551A23FEF100B0688E /* Build configuration list for PBXNativeTarget "Aligulac" */;
+			buildConfigurationList = 267A74551A23FEF100B0688E /* Build configuration list for PBXNativeTarget "Stasis" */;
 			buildPhases = (
 				267A74321A23FEF100B0688E /* Sources */,
 				267A74331A23FEF100B0688E /* Frameworks */,
@@ -217,14 +219,14 @@
 			);
 			dependencies = (
 			);
-			name = Aligulac;
-			productName = Aligulac;
-			productReference = 267A74361A23FEF100B0688E /* Aligulac.app */;
+			name = Stasis;
+			productName = Stasis;
+			productReference = 267A74361A23FEF100B0688E /* Stasis.app */;
 			productType = "com.apple.product-type.application";
 		};
-		267A744A1A23FEF100B0688E /* AligulacTests */ = {
+		267A744A1A23FEF100B0688E /* StasisTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 267A74581A23FEF100B0688E /* Build configuration list for PBXNativeTarget "AligulacTests" */;
+			buildConfigurationList = 267A74581A23FEF100B0688E /* Build configuration list for PBXNativeTarget "StasisTests" */;
 			buildPhases = (
 				267A74471A23FEF100B0688E /* Sources */,
 				267A74481A23FEF100B0688E /* Frameworks */,
@@ -235,9 +237,9 @@
 			dependencies = (
 				267A744D1A23FEF100B0688E /* PBXTargetDependency */,
 			);
-			name = AligulacTests;
-			productName = AligulacTests;
-			productReference = 267A744B1A23FEF100B0688E /* AligulacTests.xctest */;
+			name = StasisTests;
+			productName = StasisTests;
+			productReference = 267A744B1A23FEF100B0688E /* StasisTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -259,7 +261,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 267A74311A23FEF100B0688E /* Build configuration list for PBXProject "Aligulac" */;
+			buildConfigurationList = 267A74311A23FEF100B0688E /* Build configuration list for PBXProject "Stasis" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -272,8 +274,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				267A74351A23FEF100B0688E /* Aligulac */,
-				267A744A1A23FEF100B0688E /* AligulacTests */,
+				267A74351A23FEF100B0688E /* Stasis */,
+				267A744A1A23FEF100B0688E /* StasisTests */,
 			);
 		};
 /* End PBXProject section */
@@ -320,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				267A74521A23FEF100B0688E /* AligulacTests.swift in Sources */,
+				267A74521A23FEF100B0688E /* StasisTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,7 +331,7 @@
 /* Begin PBXTargetDependency section */
 		267A744D1A23FEF100B0688E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 267A74351A23FEF100B0688E /* Aligulac */;
+			target = 267A74351A23FEF100B0688E /* Stasis */;
 			targetProxy = 267A744C1A23FEF100B0688E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -444,10 +446,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage.build/iOS",
 				);
-				INFOPLIST_FILE = Aligulac/Info.plist;
+				INFOPLIST_FILE = Stasis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Stasis;
 				PROVISIONING_PROFILE = "4c0f5ebd-da49-4623-9d61-c406f2a3a1ff";
 			};
 			name = Debug;
@@ -463,10 +465,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage.build/iOS",
 				);
-				INFOPLIST_FILE = Aligulac/Info.plist;
+				INFOPLIST_FILE = Stasis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Stasis;
 				PROVISIONING_PROFILE = "4c0f5ebd-da49-4623-9d61-c406f2a3a1ff";
 			};
 			name = Release;
@@ -483,11 +485,11 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AligulacTests/Info.plist;
+				INFOPLIST_FILE = StasisTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aligulac.app/Aligulac";
+				PRODUCT_NAME = StasisTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stasis.app/Stasis";
 			};
 			name = Debug;
 		};
@@ -499,18 +501,18 @@
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = AligulacTests/Info.plist;
+				INFOPLIST_FILE = StasisTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Aligulac.app/Aligulac";
+				PRODUCT_NAME = StasisTests;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stasis.app/Stasis";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		267A74311A23FEF100B0688E /* Build configuration list for PBXProject "Aligulac" */ = {
+		267A74311A23FEF100B0688E /* Build configuration list for PBXProject "Stasis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				267A74531A23FEF100B0688E /* Debug */,
@@ -519,7 +521,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		267A74551A23FEF100B0688E /* Build configuration list for PBXNativeTarget "Aligulac" */ = {
+		267A74551A23FEF100B0688E /* Build configuration list for PBXNativeTarget "Stasis" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				267A74561A23FEF100B0688E /* Debug */,
@@ -528,7 +530,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		267A74581A23FEF100B0688E /* Build configuration list for PBXNativeTarget "AligulacTests" */ = {
+		267A74581A23FEF100B0688E /* Build configuration list for PBXNativeTarget "StasisTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				267A74591A23FEF100B0688E /* Debug */,
