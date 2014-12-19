@@ -140,11 +140,11 @@
 				26D94B651A24AE7B00F2678C /* TopPlayersViewController.swift */,
 				267A743B1A23FEF100B0688E /* AppDelegate.swift */,
 				267A743D1A23FEF100B0688E /* ViewController.swift */,
-				267A743F1A23FEF100B0688E /* Main.storyboard */,
-				267A74421A23FEF100B0688E /* Images.xcassets */,
-				267A74441A23FEF100B0688E /* LaunchScreen.xib */,
-				267A74391A23FEF100B0688E /* Supporting Files */,
 				263D49531A2D312A008D3AC9 /* ResultExtension.swift */,
+				267A743F1A23FEF100B0688E /* Main.storyboard */,
+				267A74441A23FEF100B0688E /* LaunchScreen.xib */,
+				267A74421A23FEF100B0688E /* Images.xcassets */,
+				267A74391A23FEF100B0688E /* Supporting Files */,
 			);
 			path = Aligulac;
 			sourceTree = "<group>";

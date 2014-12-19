@@ -11,15 +11,15 @@ import ReactiveCocoa
 import LlamaKit
 import CMDQueryStringKit
 
-public final class AligulacAPI {
-    public let baseURL = NSURL(string:"http://www.aligulac.com/api/v1/")!
-    public let token: String
+final class AligulacAPI {
+    let baseURL = NSURL(string:"http://www.aligulac.com/api/v1/")!
+    let token: String
     
-    public required init(token: String) {
+    required init(token: String) {
         self.token = token
     }
     
-    public func signedRequest(path: String, parameters: [String : AnyObject]) -> NSMutableURLRequest {
+    func signedRequest(path: String, parameters: [String : AnyObject]) -> NSMutableURLRequest {
         var signedParams = parameters
         signedParams["apikey"] = token
         let pathString = path + "?" + CMDQueryStringSerialization.queryStringWithDictionary(signedParams)
@@ -28,8 +28,8 @@ public final class AligulacAPI {
     }
 }
 
-public extension AligulacAPI {
-    public func fetchPlayers() -> ColdSignal<[Player]> {
+extension AligulacAPI {
+    func fetchPlayers() -> ColdSignal<[Player]> {
         let parameters = [
             "current_rating__isnull" : "false",
             "current_rating__decay__lt" : 4,
@@ -55,7 +55,7 @@ public extension AligulacAPI {
             .map { $0.map(Player.transform) }
     }
     
-    public func stubbedPlayersJSON(request: NSURLRequest) -> ColdSignal<(NSData, NSURLResponse)> {
+    internal func stubbedPlayersJSON(request: NSURLRequest) -> ColdSignal<(NSData, NSURLResponse)> {
         let path = NSBundle.mainBundle().pathForResource("players", ofType: "json")!
         let data = NSData(contentsOfFile: path)!
         let response = NSHTTPURLResponse(URL: request.URL, MIMEType: "application/json", expectedContentLength: 0, textEncodingName: nil)
@@ -63,7 +63,7 @@ public extension AligulacAPI {
         return ColdSignal.single(tuple)
     }
     
-    public func dataToJSON(data: NSData) -> Result<[String : AnyObject]> {
+    internal func dataToJSON(data: NSData) -> Result<[String : AnyObject]> {
         let opt: NSJSONReadingOptions = .AllowFragments
         
         return try {
@@ -72,7 +72,7 @@ public extension AligulacAPI {
         }
     }
     
-    public func extractObjects(JSON: [String : AnyObject]) -> Result<[[String : AnyObject]]> {
+    internal func extractObjects(JSON: [String : AnyObject]) -> Result<[[String : AnyObject]]> {
         if ((JSON["objects"]) != nil) {
             return success(JSON["objects"] as [[String : AnyObject]])
         } else {

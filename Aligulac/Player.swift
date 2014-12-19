@@ -5,7 +5,8 @@
 //  Created by Eli Perkins on 11/7/14.
 //  Copyright (c) 2014 Eli Perkins. All rights reserved.
 //
-public struct Player: Printable {
+
+struct Player: Printable {
     let name: String
     let romanizedName: String?
     let tag: String
@@ -40,12 +41,12 @@ public struct Player: Printable {
         )
     }
     
-    public var description: String {
+    var description: String {
         return "Player: [\(team.shortname)] \(tag) (\(name))"
     }
 }
 
-public enum Race {
+enum Race {
     case Terran
     case Zerg
     case Protoss
@@ -64,7 +65,7 @@ public enum Race {
     }
 }
 
-public struct Team {
+struct Team {
     let name: String
     let shortname: String
     let remoteID: Int
