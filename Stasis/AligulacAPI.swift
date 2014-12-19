@@ -28,6 +28,8 @@ final class AligulacAPI {
     }
 }
 
+typealias JSONDictionary = [String:AnyObject]
+
 extension AligulacAPI {
     func fetchPlayers() -> ColdSignal<[Player]> {
         let parameters = [
@@ -42,16 +44,11 @@ extension AligulacAPI {
 //        let requestSignal = NSURLSession.sharedSession().rac_dataWithRequest(request)
     
         return requestSignal
-            .map { (data, response) -> NSData in
+            .map { (data, response) in
                 return data
             }
-            .map {
-                (data: NSData) -> [String : AnyObject]? in
-                let opt: NSJSONReadingOptions = .AllowFragments
-                
-                return NSJSONSerialization.JSONObjectWithData(data, options: opt, error: nil) as [String : AnyObject]?
-            }
-            .map { $0!["objects"] as [[String : AnyObject]] }
+            .map(self.decodeJSON)
+            .map { $0!["objects"] as [JSONDictionary] }
             .map { $0.map(Player.transform) }
     }
     
@@ -63,18 +60,13 @@ extension AligulacAPI {
         return ColdSignal.single(tuple)
     }
     
-    internal func dataToJSON(data: NSData) -> Result<[String : AnyObject]> {
-        let opt: NSJSONReadingOptions = .AllowFragments
-        
-        return try {
-            error in
-            NSJSONSerialization.JSONObjectWithData(data, options: opt, error: error) as? [String : AnyObject]
-        }
+    internal func decodeJSON(data: NSData) -> JSONDictionary? {
+        return NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil) as? JSONDictionary
     }
     
-    internal func extractObjects(JSON: [String : AnyObject]) -> Result<[[String : AnyObject]]> {
+    internal func extractObjects(JSON: [String : AnyObject]) -> Result<[JSONDictionary]> {
         if ((JSON["objects"]) != nil) {
-            return success(JSON["objects"] as [[String : AnyObject]])
+            return success(JSON["objects"] as [JSONDictionary])
         } else {
             return failure()
         }
