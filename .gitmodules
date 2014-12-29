@@ -1,14 +1,24 @@
-[submodule "Carthage.checkout/ISO8601"]
+[submodule "Carthage/Checkouts/Argo"]
+	path = Carthage/Checkouts/Argo
+	url = https://github.com/thoughtbot/Argo.git
+[submodule "Carthage/Checkouts/ISO8601"]
+	path = Carthage/Checkouts/ISO8601
 	url = https://github.com/eliperkins/ISO8601.git
-[submodule "Carthage.checkout/LlamaKit"]
+[submodule "Carthage/Checkouts/LlamaKit"]
+	path = Carthage/Checkouts/ISO8601
 	url = https://github.com/LlamaKit/LlamaKit.git
-[submodule "Carthage.checkout/Nimble"]
+[submodule "Carthage/Checkouts/Nimble"]
+	path = Carthage/Checkouts/Nimble
 	url = https://github.com/Quick/Nimble.git
-[submodule "Carthage.checkout/Quick"]
+[submodule "Carthage/Checkouts/Quick"]
+	path = Carthage/Checkouts/Quick
 	url = https://github.com/Quick/Quick.git
-[submodule "Carthage.checkout/xcconfigs"]
+[submodule "Carthage/Checkouts/xcconfigs"]
+	path = Carthage/Checkouts/xcconfigs
 	url = https://github.com/jspahrsummers/xcconfigs.git
-[submodule "Carthage.checkout/CMDQueryStringSerialization"]
+[submodule "Carthage/Checkouts/CMDQueryStringSerialization"]
+	path = Carthage/Checkouts/CMDQueryStringSerialization
 	url = https://github.com/eliperkins/CMDQueryStringSerialization.git
-[submodule "Carthage.checkout/ReactiveCocoa"]
+[submodule "Carthage/Checkouts/ReactiveCocoa"]
+	path = Carthage/Checkouts/ReactiveCocoa
 	url = https://github.com/ReactiveCocoa/ReactiveCocoa.git

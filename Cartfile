@@ -5,3 +5,5 @@ github "eliperkins/CMDQueryStringSerialization"
 
 github "Quick/Quick" == 0.2.0
 github "Quick/Nimble"
+
+github "thoughtbot/Argo"
