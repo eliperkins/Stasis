@@ -7,26 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26282A241A44D167009C70AA /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264F23A71A24CF32005FFB37 /* Nimble.framework */; };
-		26282A251A44D168009C70AA /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264F23A81A24CF32005FFB37 /* Quick.framework */; };
-		26282A261A44D16C009C70AA /* Quick.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 264F23A81A24CF32005FFB37 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		26282A271A44D16E009C70AA /* Nimble.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 264F23A71A24CF32005FFB37 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		262DE0481A30938B00DEE8C9 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 262DE0471A30938B00DEE8C9 /* ReactiveCocoa.framework */; };
-		262DE0491A30938B00DEE8C9 /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 262DE0471A30938B00DEE8C9 /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		263D49541A2D312A008D3AC9 /* ResultExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 263D49531A2D312A008D3AC9 /* ResultExtension.swift */; };
 		2642C6591A253FEA00ED1BDD /* players.json in Resources */ = {isa = PBXBuildFile; fileRef = 2642C6581A253FEA00ED1BDD /* players.json */; };
 		2642C65B1A2544E900ED1BDD /* AligulacAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2642C65A1A2544E900ED1BDD /* AligulacAPI.swift */; };
-		264F23AA1A24CF32005FFB37 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 264F23A61A24CF32005FFB37 /* LlamaKit.framework */; };
-		264F23AB1A24CF32005FFB37 /* LlamaKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 264F23A61A24CF32005FFB37 /* LlamaKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		267A743C1A23FEF100B0688E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267A743B1A23FEF100B0688E /* AppDelegate.swift */; };
 		267A743E1A23FEF100B0688E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267A743D1A23FEF100B0688E /* ViewController.swift */; };
 		267A74411A23FEF100B0688E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 267A743F1A23FEF100B0688E /* Main.storyboard */; };
 		267A74431A23FEF100B0688E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 267A74421A23FEF100B0688E /* Images.xcassets */; };
 		267A74461A23FEF100B0688E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267A74441A23FEF100B0688E /* LaunchScreen.xib */; };
-		26A894381A2E8CEB0063F68A /* CMDQueryStringKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A894361A2E8CEB0063F68A /* CMDQueryStringKit.framework */; };
-		26A894391A2E8CEB0063F68A /* CMDQueryStringKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26A894361A2E8CEB0063F68A /* CMDQueryStringKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		26A8943A1A2E8CEB0063F68A /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26A894371A2E8CEB0063F68A /* ISO8601.framework */; };
-		26A8943B1A2E8CEB0063F68A /* ISO8601.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26A894371A2E8CEB0063F68A /* ISO8601.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26C712A61A52FD7D00886E89 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C7129F1A52FD7D00886E89 /* Argo.framework */; };
+		26C712A71A52FD7D00886E89 /* CMDQueryStringKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C712A01A52FD7D00886E89 /* CMDQueryStringKit.framework */; };
+		26C712A81A52FD7D00886E89 /* ISO8601.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C712A11A52FD7D00886E89 /* ISO8601.framework */; };
+		26C712A91A52FD7D00886E89 /* LlamaKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C712A21A52FD7D00886E89 /* LlamaKit.framework */; };
+		26C712AC1A52FD7D00886E89 /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C712A51A52FD7D00886E89 /* ReactiveCocoa.framework */; };
+		26C712AD1A52FDA100886E89 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C712A31A52FD7D00886E89 /* Nimble.framework */; };
+		26C712AE1A52FDA100886E89 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26C712A41A52FD7D00886E89 /* Quick.framework */; };
 		26D94B661A24AE7B00F2678C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D94B641A24AE7B00F2678C /* Player.swift */; };
 		26D94B671A24AE7B00F2678C /* TopPlayersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D94B651A24AE7B00F2678C /* TopPlayersViewController.swift */; };
 		26F23B9E1A43980200382D51 /* PlayerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F23B9D1A43980200382D51 /* PlayerListViewModel.swift */; };
@@ -52,8 +47,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				26282A261A44D16C009C70AA /* Quick.framework in Copy Frameworks */,
-				26282A271A44D16E009C70AA /* Nimble.framework in Copy Frameworks */,
 			);
 			name = "Copy Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,10 +57,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				26A894391A2E8CEB0063F68A /* CMDQueryStringKit.framework in Embed Frameworks */,
-				264F23AB1A24CF32005FFB37 /* LlamaKit.framework in Embed Frameworks */,
-				26A8943B1A2E8CEB0063F68A /* ISO8601.framework in Embed Frameworks */,
-				262DE0491A30938B00DEE8C9 /* ReactiveCocoa.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,13 +64,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		262DE0471A30938B00DEE8C9 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage.build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		263D49531A2D312A008D3AC9 /* ResultExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultExtension.swift; sourceTree = "<group>"; };
 		2642C6581A253FEA00ED1BDD /* players.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = players.json; sourceTree = "<group>"; };
 		2642C65A1A2544E900ED1BDD /* AligulacAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AligulacAPI.swift; sourceTree = "<group>"; };
-		264F23A61A24CF32005FFB37 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../Carthage.build/iOS/LlamaKit.framework; sourceTree = "<group>"; };
-		264F23A71A24CF32005FFB37 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage.build/iOS/Nimble.framework; sourceTree = "<group>"; };
-		264F23A81A24CF32005FFB37 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage.build/iOS/Quick.framework; sourceTree = "<group>"; };
 		267A74361A23FEF100B0688E /* Stasis.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Stasis.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		267A743A1A23FEF100B0688E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		267A743B1A23FEF100B0688E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,8 +76,13 @@
 		267A74451A23FEF100B0688E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		267A744B1A23FEF100B0688E /* StasisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StasisTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		267A74501A23FEF100B0688E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		26A894361A2E8CEB0063F68A /* CMDQueryStringKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CMDQueryStringKit.framework; path = ../Carthage.build/iOS/CMDQueryStringKit.framework; sourceTree = "<group>"; };
-		26A894371A2E8CEB0063F68A /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = ../Carthage.build/iOS/ISO8601.framework; sourceTree = "<group>"; };
+		26C7129F1A52FD7D00886E89 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = ../Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
+		26C712A01A52FD7D00886E89 /* CMDQueryStringKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CMDQueryStringKit.framework; path = ../Carthage/Build/iOS/CMDQueryStringKit.framework; sourceTree = "<group>"; };
+		26C712A11A52FD7D00886E89 /* ISO8601.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ISO8601.framework; path = ../Carthage/Build/iOS/ISO8601.framework; sourceTree = "<group>"; };
+		26C712A21A52FD7D00886E89 /* LlamaKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LlamaKit.framework; path = ../Carthage/Build/iOS/LlamaKit.framework; sourceTree = "<group>"; };
+		26C712A31A52FD7D00886E89 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = ../Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		26C712A41A52FD7D00886E89 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = ../Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		26C712A51A52FD7D00886E89 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/iOS/ReactiveCocoa.framework; sourceTree = "<group>"; };
 		26D94B641A24AE7B00F2678C /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		26D94B651A24AE7B00F2678C /* TopPlayersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopPlayersViewController.swift; sourceTree = "<group>"; };
 		26F23B9D1A43980200382D51 /* PlayerListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerListViewModel.swift; sourceTree = "<group>"; };
@@ -106,10 +96,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26A894381A2E8CEB0063F68A /* CMDQueryStringKit.framework in Frameworks */,
-				264F23AA1A24CF32005FFB37 /* LlamaKit.framework in Frameworks */,
-				26A8943A1A2E8CEB0063F68A /* ISO8601.framework in Frameworks */,
-				262DE0481A30938B00DEE8C9 /* ReactiveCocoa.framework in Frameworks */,
+				26C712A61A52FD7D00886E89 /* Argo.framework in Frameworks */,
+				26C712A71A52FD7D00886E89 /* CMDQueryStringKit.framework in Frameworks */,
+				26C712A81A52FD7D00886E89 /* ISO8601.framework in Frameworks */,
+				26C712A91A52FD7D00886E89 /* LlamaKit.framework in Frameworks */,
+				26C712AC1A52FD7D00886E89 /* ReactiveCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,8 +108,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26282A241A44D167009C70AA /* Nimble.framework in Frameworks */,
-				26282A251A44D168009C70AA /* Quick.framework in Frameworks */,
+				26C712AD1A52FDA100886E89 /* Nimble.framework in Frameworks */,
+				26C712AE1A52FDA100886E89 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,12 +163,13 @@
 		267A74391A23FEF100B0688E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				262DE0471A30938B00DEE8C9 /* ReactiveCocoa.framework */,
-				26A894361A2E8CEB0063F68A /* CMDQueryStringKit.framework */,
-				26A894371A2E8CEB0063F68A /* ISO8601.framework */,
-				264F23A61A24CF32005FFB37 /* LlamaKit.framework */,
-				264F23A71A24CF32005FFB37 /* Nimble.framework */,
-				264F23A81A24CF32005FFB37 /* Quick.framework */,
+				26C7129F1A52FD7D00886E89 /* Argo.framework */,
+				26C712A01A52FD7D00886E89 /* CMDQueryStringKit.framework */,
+				26C712A11A52FD7D00886E89 /* ISO8601.framework */,
+				26C712A21A52FD7D00886E89 /* LlamaKit.framework */,
+				26C712A31A52FD7D00886E89 /* Nimble.framework */,
+				26C712A41A52FD7D00886E89 /* Quick.framework */,
+				26C712A51A52FD7D00886E89 /* ReactiveCocoa.framework */,
 				2642C6581A253FEA00ED1BDD /* players.json */,
 				267A743A1A23FEF100B0688E /* Info.plist */,
 			);
@@ -230,6 +222,7 @@
 				267A74331A23FEF100B0688E /* Frameworks */,
 				267A74341A23FEF100B0688E /* Resources */,
 				26D94B6C1A24AEAE00F2678C /* Embed Frameworks */,
+				269FA03D1A53514800F943D2 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -248,6 +241,7 @@
 				267A74481A23FEF100B0688E /* Frameworks */,
 				267A74491A23FEF100B0688E /* Resources */,
 				26282A231A44D15B009C70AA /* Copy Frameworks */,
+				26C7129E1A52FD5F00886E89 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -317,6 +311,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		269FA03D1A53514800F943D2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CMDQueryStringKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ISO8601.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/LlamaKit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		26C7129E1A52FD5F00886E89 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		267A74321A23FEF100B0688E /* Sources */ = {
@@ -462,7 +490,7 @@
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage.build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Stasis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -482,7 +510,7 @@
 				DEFINES_MODULE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage.build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Stasis/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -499,7 +527,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage.build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -520,7 +548,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage.build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = StasisTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

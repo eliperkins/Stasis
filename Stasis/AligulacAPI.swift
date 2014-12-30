@@ -10,6 +10,7 @@ import Foundation
 import ReactiveCocoa
 import LlamaKit
 import CMDQueryStringKit
+import Argo
 
 final class AligulacAPI {
     let baseURL = NSURL(string:"http://www.aligulac.com/api/v1/")!
@@ -28,8 +29,6 @@ final class AligulacAPI {
     }
 }
 
-typealias JSONDictionary = [String:AnyObject]
-
 extension AligulacAPI {
     func fetchPlayers() -> ColdSignal<[Player]> {
         let parameters = [
@@ -42,14 +41,38 @@ extension AligulacAPI {
 
         let requestSignal = stubbedPlayersJSON(request)
 //        let requestSignal = NSURLSession.sharedSession().rac_dataWithRequest(request)
-    
+        
         return requestSignal
-            .map { (data, response) in
-                return data
+            .tryMap { (data, response) -> Result<AnyObject> in
+                return try {
+                    NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions(0), error: $0)
+                }
             }
-            .map(self.decodeJSON)
-            .map { $0!["objects"] as [JSONDictionary] }
-            .map { $0.map(Player.transform) }
+            .tryMap { (json) -> Result<[JSONValue]> in
+                let parsedJSON = JSONValue.parse(json)
+                switch parsedJSON {
+                case let .JSONObject(o):
+                    // Aligulac API serializes root objects under the key "objects"
+                    if let valueExists = o["objects"] {
+                        switch valueExists {
+                        case let .JSONArray(array):
+                            return success(array)
+                            
+                        default:
+                            break
+                        }
+                    }
+                    
+                default:
+                    break
+                }
+                
+                return failure("Failed to get array as root JSON object")
+            }
+            .tryMap { (playersJSON) -> Result<[Player]> in
+                // TODO: see if we can get nil players as a `failure`
+                success(playersJSON.map { Player.decode($0)! })
+            }
     }
     
     internal func stubbedPlayersJSON(request: NSURLRequest) -> ColdSignal<(NSData, NSURLResponse)> {
@@ -60,6 +83,9 @@ extension AligulacAPI {
         return ColdSignal.single(tuple)
     }
     
+    
+    typealias JSONDictionary = [String:AnyObject]
+
     internal func decodeJSON(data: NSData) -> JSONDictionary? {
         return NSJSONSerialization.JSONObjectWithData(data, options: .allZeros, error: nil) as? JSONDictionary
     }

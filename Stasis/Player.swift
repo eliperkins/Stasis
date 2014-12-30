@@ -6,43 +6,50 @@
 //  Copyright (c) 2014 Eli Perkins. All rights reserved.
 //
 
-public struct Player: Printable {
+import Argo
+
+public struct Player {
+    public let remoteID: Int
     public let name: String
     public let romanizedName: String?
     public let tag: String
     public let race: Race
-    public let team: Team
-    public let remoteID: Int
+    public let currentTeams: [Team]
     public let country: String
 
-    public static func transform(dict: [String : AnyObject]) -> Player {
-        let name = dict["name"] as String
-        let romanized = dict["romanized_name"] as? String
-        let tag = dict["tag"] as String
-        let race = Race.fromString(dict["race"] as String)
-        let currentTeamsWrapped = dict["current_teams"] as [Dictionary<String,AnyObject>]
-        var team: Team
-        if let currentTeam = currentTeamsWrapped.first as Dictionary<String,AnyObject>! {
-            team = Team.transform(currentTeam["team"] as Dictionary<String,AnyObject>)
-        } else {
-            team = Team.TeamlessTeam
-        }
-        let remoteID = dict["id"] as Int
-        let country = dict["country"] as String
+    public var team: Team {
+        return currentTeams.first ?? Team.TeamlessTeam
+    }
+}
 
+extension Player: Printable {
+    public var description: String {
+        return "Player: [\(team.shortname)] \(tag) (\(name))"
+    }
+}
+
+extension Player: JSONDecodable {
+    public static func create(remoteID: Int)(name: String)(romanizedName: String)(tag: String)(race: Race)(currentTeams: [Team])(country: String) -> Player {
         return Player(
+            remoteID: remoteID,
             name: name,
-            romanizedName: romanized,
+            romanizedName: romanizedName,
             tag: tag,
             race: race,
-            team: team,
-            remoteID: remoteID,
+            currentTeams: currentTeams,
             country: country
         )
     }
     
-    public var description: String {
-        return "Player: [\(team.shortname)] \(tag) (\(name))"
+    public static func decode(j: JSONValue) -> Player? {
+        return Player.create
+            <^> j <| "id"
+            <*> j <| "name"
+            <*> j <| "romanized_name"
+            <*> j <| "tag"
+            <*> j <| "race"
+            <*> j <|| "current_teams"
+            <*> j <| "country"
     }
 }
 
@@ -65,20 +72,37 @@ public enum Race {
     }
 }
 
-public struct Team {
-    public let name: String
-    public let shortname: String
-    public let remoteID: Int
-    
-    public static var TeamlessTeam: Team {
-        return Team(name: "Teamless", shortname: "", remoteID: 0)
+extension Race: JSONDecodable {
+    public static func create(string: String) -> Race {
+        return Race.fromString(string)
     }
     
-    public static func transform(dict: Dictionary<String,AnyObject>) -> Team {
-        let name = dict["name"] as String
-        let shortname = dict["shortname"] as String
-        let remoteID = dict["id"] as Int
-        
-        return Team(name: name, shortname: shortname, remoteID: remoteID)
+    public static func decode(j: JSONValue) -> Race? {
+        return Race.create
+            <^> j <| "race"
     }
 }
+
+public struct Team {
+    public let remoteID: Int
+    public let name: String
+    public let shortname: String
+    
+    public static var TeamlessTeam: Team {
+        return Team(remoteID: 0, name: "Teamless", shortname: "")
+    }    
+}
+
+extension Team: JSONDecodable {
+    public static func create(remoteID: Int)(name: String)(shortname: String) -> Team {
+        return Team(remoteID: remoteID, name: name, shortname: shortname)
+    }
+    
+    public static func decode(j: JSONValue) -> Team? {
+        return Team.create
+            <^> j <| "id"
+            <*> j <| "name"
+            <*> j <| "shortname"
+    }
+}
+
