@@ -78,8 +78,12 @@ extension Race: JSONDecodable {
     }
     
     public static func decode(j: JSONValue) -> Race? {
-        return Race.create
-            <^> j <| "race"
+        switch j {
+        case let .JSONString(s):
+            return Race.create(s)
+        default:
+            return .None
+        }
     }
 }
 
@@ -90,7 +94,7 @@ public struct Team {
     
     public static var TeamlessTeam: Team {
         return Team(remoteID: 0, name: "Teamless", shortname: "")
-    }    
+    }
 }
 
 extension Team: JSONDecodable {
